@@ -5,7 +5,7 @@
 
 body {
 	background-color: #1d232a;
-	font-family: "OPen Sans", "icones", sans-serif;
+	font-family: "Open Sans", "icones", sans-serif;
 	color: #ffffff;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .cabecalho__logo {
-	width: 24px;
+	width: 40px;
 }
 
 .menu-lateral {
@@ -70,7 +70,7 @@ body {
 }
 
 .menu-lateral__link::before {
-	content: "";
+	content: "\e900";
 	width: 24px;
 	height: 24px;
 	font-size: 24px;
@@ -78,27 +78,43 @@ body {
 	left: 24px;
 }
 
-.menu-lateral__link--incio::before {
+.menu-lateral__link--inicio::before {
 	content: "\e902";
 }
+
 .menu-lateral__link--videos::before {
 	content: "\e90e";
 }
+
 .menu-lateral__link--picos::before {
 	content: "\e909";
 }
+
 .menu-lateral__link--integrantes::before {
 	content: "\e903";
 }
+
 .menu-lateral__link--camisas::before {
 	content: "\e900";
 }
+
 .menu-lateral__link--pinturas::before {
 	content: "\e90a";
 }
 
+.principal {
+	padding: 24px 16px;
+	display: grid;
+	gap: 16px;
+}
+
 .titulo-pagina {
 	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.titulo-secao {
+	font-size: 1.2rem;
 	font-weight: 700;
 }
 
@@ -109,10 +125,15 @@ body {
 	background-color: #2c343a;
 }
 
+.cartao--destaque {
+	margin-bottom: 16px;
+}
+
 .cartao__conteudo {
 	padding: 16px;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: auto 1fr;
+	gap: 8px;
 }
 
 .cartao__destaque {
@@ -156,6 +177,7 @@ body {
 	height: 40px;
 	border-radius: 10px;
 	font-size: 0.9rem;
+	justify-self: flex-end;
 }
 
 .cartao__botao--play::before {
@@ -170,4 +192,9 @@ body {
 
 .cartao__botao--destaque::before {
 	margin-right: 8px;
+}
+
+.secao {
+	display: grid;
+	gap: 16px;
 }
